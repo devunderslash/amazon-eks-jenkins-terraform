@@ -42,3 +42,15 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin. If you
 ```
 ./mvnw spring-boot:run
 ```
+
+
+## Updates
+* Update the Keyname in terraform.tfvars to match the one you created on AWS EC2
+* Update Region and AMI (terraform.tfvars) depending on where you want to host your pipeline
+* For the docker section of your pipeline to work you will need to add the Docker Pipeline plugin in Jenkins also
+
+### TODO
+Add SSH key pair creation to main.tf - https://registry.terraform.io/modules/terraform-aws-modules/key-pair/aws/latest
+
+
+### Tutorial Link - https://aws.amazon.com/blogs/opensource/continuous-integration-using-jenkins-and-hashicorp-terraform-on-amazon-eks/
