@@ -10,6 +10,13 @@ To implement the instructions in this post, you will need the following accounts
 
 <br />
 
+## Updates
+* Update the Keyname in terraform.tfvars to match the one you created on AWS EC2
+* Update Region and AMI (terraform.tfvars) depending on where you want to host your pipeline
+* For the docker section of your pipeline to work you will need to add the Docker Pipeline plugin in Jenkins also
+
+<br />
+
 ## Architecture
 
 <img width="1042" alt="architecture-screenshot" src="images/Architecture.png">
@@ -44,13 +51,8 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin. If you
 ```
 
 
-## Updates
-* Update the Keyname in terraform.tfvars to match the one you created on AWS EC2
-* Update Region and AMI (terraform.tfvars) depending on where you want to host your pipeline
-* For the docker section of your pipeline to work you will need to add the Docker Pipeline plugin in Jenkins also
-
 ### TODO
-Add SSH key pair creation to main.tf - https://registry.terraform.io/modules/terraform-aws-modules/key-pair/aws/latest
+Add SSH key pair creation to main.tf - https://registry.terraform.io/modules/terraform-aws-modules/key-pair/aws/latest - Done
 
 
 ### Tutorial Link - https://aws.amazon.com/blogs/opensource/continuous-integration-using-jenkins-and-hashicorp-terraform-on-amazon-eks/
