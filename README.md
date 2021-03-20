@@ -11,7 +11,7 @@ To implement the instructions in this post, you will need the following accounts
 <br />
 
 ## Updates
-* Update the Keyname in terraform.tfvars to match the one you created on AWS EC2
+* This must be run in AWS Cloud9 in order to follow the blog in the tutorial link below
 * Update Region and AMI (terraform.tfvars) depending on where you want to host your pipeline
 * For the docker section of your pipeline to work you will need to add the Docker Pipeline plugin in Jenkins also
 
@@ -52,7 +52,7 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin. If you
 
 
 ### TODO
-Add SSH key pair creation to main.tf - https://registry.terraform.io/modules/terraform-aws-modules/key-pair/aws/latest - Done
+
 
 
 ### Tutorial Link - https://aws.amazon.com/blogs/opensource/continuous-integration-using-jenkins-and-hashicorp-terraform-on-amazon-eks/
